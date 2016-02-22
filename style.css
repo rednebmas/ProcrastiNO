@@ -1,0 +1,109 @@
+/* style.css */
+
+html {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	height: 100%;
+	color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/***********
+ * Nav bar *
+ ***********/
+
+#nav-bar {
+	background-color: #383838;
+	color: white;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+}
+
+#nav-bar-right-button {
+	position: absolute;
+	right: 10px;
+	font-size: 35px;
+}
+
+#nav-bar-title {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+}
+
+/***************
+ * Tetris grid *
+ **************/
+
+#tetris-grid-container {
+	height: 600px;
+}
+
+.tetris-grid {
+	float: right;
+	background-color: gray;
+	width: 96%;
+	height: 600px;
+	right: 0px;
+	border-collapse: collapse;
+}
+
+.tetris-grid tr td {
+	border: 1px solid #686868;
+	width: 14%;
+	padding: 0px;
+	position: relative;
+}
+
+.tetris-grid tr.last-row td {
+	height: 32px;
+	text-align: center;
+	background-color: #939393;
+}
+
+.tetris-grid tr td .fill-block {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	border: 5px solid;
+	box-sizing: border-box;
+}
+
+/* some colors from http://cdn.phys.org/newman/gfx/news/hires/tetris.jpg */
+.tetris-grid tr td .fill-block-blue {
+	background-color: blue;
+	border-bottom-color: #00037D;
+	border-left-color: #00037D;
+	border-top-color: #686AFA;
+	border-right-color: #686AFA;
+	height: 50px;
+}
+
+.tetris-grid tr td .fill-block-red {
+	background-color: #FF0000;
+	border-bottom-color: #CB0201;
+	border-left-color: #CB0201;
+	border-top-color: #F47075;
+	border-right-color: #F47075;
+	height: 25px;
+}
+
+#tetris-grid-y-axis-label {
+	background-color: #939393;
+    height: 600px;
+    width: 4%;
+    display: inline-block;
+}
+
+/***************
+ * Task list
+ **************/
+
+.separator {
+	background-color: #383838;
+	height: 4px;
+}
+
