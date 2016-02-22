@@ -2,6 +2,7 @@
 
 html {
 	height: 100%;
+	background-color: #383838;
 }
 body {
 	margin: 0px;
@@ -98,12 +99,67 @@ body {
     display: inline-block;
 }
 
+/*#tetris-grid-y-axis-label tr {
+	width: 100%;
+}
+#tetris-grid-y-axis-label tr td {
+	border: 1px solid #686868;
+	height: 100px;
+	width: 100%;
+	position: relative;
+}
+*/
 /***************
  * Task list
  **************/
 
+#task-list .title {
+	font-size: 22px;
+}
+
+.task {
+	padding: 10px;
+	padding-right: 45px;
+	overflow: hidden;
+	position: relative;
+}
+
+.task .detail-arrow-container {
+	height: 100%;
+	width: 25px;
+	margin-top: -20px;
+	position: absolute;
+	right: 15px;
+}
+
+.task .detail-arrow-container .detail-arrow {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 17px;
+	height: 17px;
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+   	transform: rotate(45deg);
+}
+
+.task .time-left-container {
+	float: right;
+	text-align: center;
+}
+
+.task .time-left-container .time {
+	font-size: 150%;
+}
+
+.task .time-left-container .time-units {
+	font-size: 75%;
+}
+
 .separator {
-	background-color: #383838;
+	/*background-color: #383838;*/
+	background-color: black;
 	height: 4px;
 }
 
