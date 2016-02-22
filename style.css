@@ -44,15 +44,14 @@ body {
 }
 
 .tetris-grid {
-	float: right;
 	background-color: gray;
-	width: 96%;
+	width: 100%;
 	height: 600px;
 	right: 0px;
 	border-collapse: collapse;
 }
 
-.tetris-grid tr td {
+.tetris-grid tr td:not(.first-column) {
 	border: 1px solid #686868;
 	width: 14%;
 	padding: 0px;
@@ -63,6 +62,19 @@ body {
 	height: 32px;
 	text-align: center;
 	background-color: #939393;
+}
+
+.first-column {
+	width: 0px !important;
+	background-color: #939393;
+	position: relative;
+	font-size: 13px;
+}
+
+.first-column span {
+	top: -9px;
+	right: 6px;
+	position: absolute;
 }
 
 .tetris-grid tr td .fill-block {
@@ -92,23 +104,6 @@ body {
 	height: 25px;
 }
 
-#tetris-grid-y-axis-label {
-	background-color: #939393;
-    height: 600px;
-    width: 4%;
-    display: inline-block;
-}
-
-/*#tetris-grid-y-axis-label tr {
-	width: 100%;
-}
-#tetris-grid-y-axis-label tr td {
-	border: 1px solid #686868;
-	height: 100px;
-	width: 100%;
-	position: relative;
-}
-*/
 /***************
  * Task list
  **************/

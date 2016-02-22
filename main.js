@@ -1,13 +1,19 @@
 $(document).ready(function () {
-	var labelTable = createTable(1,7);
-	labelTable.setAttribute("id", "tetris-grid-y-axis-label");
-	$('#tetris-grid-container').append(labelTable);
-
-	var table = createTable(7,7);
+	var table = createTable(7,8);
 	table = styleTable(table);
 	$('#tetris-grid-container').append(table);
 	addHomeworksToTetrisGrid();
+
+	// darkenTasksBGColor();
 });
+
+function darkenTasksBGColor()
+{
+	var tasks = $('.tasks');
+	for (var i = 0; i < tasks.length; i++) {
+		var newColor = tasks[i].colorI
+	}
+}
 
 function addHomeworksToTetrisGrid()
 {
@@ -35,6 +41,7 @@ function addHomeworksToTetrisGrid()
  */
 function createTable(rows, columns)
 {
+	var hours = 5.0;
 	var table = document.createElement("table")
 	for (var row = 0; row < rows; row++)
 	{
@@ -43,6 +50,17 @@ function createTable(rows, columns)
 		{
 			var cell = document.createElement("td");
 			cell.setAttribute("id", "tetris-grid-cell-" + row + "-" + column);
+			if (column == 0)
+			{
+				cell.setAttribute("class", "first-column");
+				if (row != 0 && row != rows - 1)
+				{
+					var tableLabel = document.createElement("span");
+					tableLabel.innerHTML = hours + "h";
+					hours -= 1;
+					cell.appendChild(tableLabel);
+				}
+			}
 			tableRow.appendChild(cell);
 		}
 		table.appendChild(tableRow);
@@ -57,9 +75,9 @@ function styleTable(table)
 	var weekdays = ['M', 'T', 'W', 'Th', 'F', 'S', 'S'];
 	var lastRow = table.children[table.children.length-1];
 	lastRow.setAttribute("class", "last-row");
-	for (var i = 0; i < lastRow.children.length; i++) 
+	for (var i = 0; i < weekdays.length; i++) 
 	{
-		lastRow.children[i].innerHTML = weekdays[i];
+		lastRow.children[i+1].innerHTML = weekdays[i];
 	}
 
 	return table;
