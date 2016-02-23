@@ -87,7 +87,7 @@ body {
 
 /* some colors from http://cdn.phys.org/newman/gfx/news/hires/tetris.jpg */
 .tetris-grid tr td .fill-block-blue {
-	background-color: blue;
+	background-color: #0000FF;
 	border-bottom-color: #00037D;
 	border-left-color: #00037D;
 	border-top-color: #686AFA;

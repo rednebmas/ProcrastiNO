@@ -4,14 +4,15 @@ $(document).ready(function () {
 	$('#tetris-grid-container').append(table);
 	addHomeworksToTetrisGrid();
 
-	// darkenTasksBGColor();
+	darkenTasksBGColor();
 });
 
 function darkenTasksBGColor()
 {
-	var tasks = $('.tasks');
+	var tasks = $('.task');
 	for (var i = 0; i < tasks.length; i++) {
-		var newColor = tasks[i].colorI
+		var newColor = shade(tasks[i].style.backgroundColor, -0.1);
+		tasks[i].style.backgroundColor = newColor;
 	}
 }
 
