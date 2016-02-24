@@ -4,11 +4,17 @@ html {
 	height: 100%;
 	background-color: #383838;
 }
+
 body {
 	margin: 0px;
 	height: 100%;
 	color: white;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+a {
+	color: white;
+	text-decoration: none;
 }
 
 /***********

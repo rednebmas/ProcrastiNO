@@ -1,3 +1,4 @@
+// http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors
 function shade(color, percent){
     if (color.length > 7 ) return shadeRGBColor(color,percent);
     else return shadeColor2(color,percent);
