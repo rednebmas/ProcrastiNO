@@ -97,27 +97,41 @@ a {
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
-	border: 5px solid;
+	border-width: 4px;
+	border-style: solid;
 	box-sizing: border-box;
+	border-radius: 3px;
 }
 
 /* some colors from http://cdn.phys.org/newman/gfx/news/hires/tetris.jpg */
 .tetris-grid tr td .fill-block-blue {
-	background-color: #0000FF;
-	border-bottom-color: #00037D;
-	border-left-color: #00037D;
-	border-top-color: #686AFA;
-	border-right-color: #686AFA;
 	height: 50px;
 }
 
-.tetris-grid tr td .fill-block-red {
-	background-color: #FF0000;
-	border-bottom-color: #CB0201;
-	border-left-color: #CB0201;
-	border-top-color: #F47075;
-	border-right-color: #F47075;
+.tetris-grid tr td .fill-block-purple {
 	height: 25px;
+}
+
+.tetris-grid tr td .fill-block-green {
+/*	background-color: #679436;
+	border-bottom-color: #51752A;
+	border-left-color: #51752A;
+	border-top-color: #7BB240;
+	border-right-color: #7BB240;
+*/	height: 150px;
+}
+
+/* THIS IS JUST FOR SHOW */
+#tetris-grid-cell-5-3 .fill-block-purple {
+	bottom: 50px;
+}
+
+#tetris-grid-cell-5-4 .fill-block-purple {
+	bottom: 50px;
+}
+
+#tetris-grid-cell-5-3 .fill-block-green {
+	bottom: 75px;
 }
 
 /***************

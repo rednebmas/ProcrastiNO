@@ -1,0 +1,17 @@
+.task-attribute {
+	margin: 20px 0px;
+}
+
+.task-attribute .title, .task-attribute .attribute-value {
+	padding: 10px 20px;
+}
+
+.task-attribute .title {
+	
+}
+
+.task-attribute .attribute-value {
+	background-color: #383838;
+	border-top: 1px solid #898989;
+	border-bottom: 1px solid #898989;
+}

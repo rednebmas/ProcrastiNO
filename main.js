@@ -3,37 +3,55 @@ $(document).ready(function () {
 	table = styleTable(table);
 	$('#tetris-grid-container').append(table);
 	addHomeworksToTetrisGrid();
-
 	darkenTasksBGColor();
+	highlightColumn(1, '#777777');
+	highlightColumn(2, '#777777');
+	highlightColumn(3, '#8E8E8E');
 });
+
+function highlightColumn(column, color)
+{
+	for (var i = 0; i < 6; i++) {
+		var cell = $('#tetris-grid-cell-' + i + '-' + column)[0];
+		cell.style.backgroundColor = color;
+	}
+}
 
 function darkenTasksBGColor()
 {
-	var tasks = $('.task');
-	for (var i = 0; i < tasks.length; i++) {
-		var newColor = shade(tasks[i].style.backgroundColor, -0.1);
-		tasks[i].style.backgroundColor = newColor;
-	}
+	// var tasks = $('.task');
+	// for (var i = 0; i < tasks.length; i++) {
+	// 	var newColor = shade(tasks[i].style.backgroundColor, -0.1);
+	// 	tasks[i].style.backgroundColor = newColor;
+	// }
 }
 
 function addHomeworksToTetrisGrid()
 {
-	var cell = document.getElementById('tetris-grid-cell-5-3');
+	// cells to fill with fake blocks
+	var cell1 = document.getElementById('tetris-grid-cell-5-3');
 	var cell2 = document.getElementById('tetris-grid-cell-5-4');
 	var cell3 = document.getElementById('tetris-grid-cell-5-5');
 	var cell4 = document.getElementById('tetris-grid-cell-5-2');
-	console.log(cell);
+
 	var block = document.createElement("div");
-	block.setAttribute("class", "fill-block fill-block-blue");
+	block.setAttribute("class", "fill-block fill-block-blue color-2 color-2-outset-border");
 	block.setAttribute("height", "50px");
-	cell.appendChild(block);
+	cell1.appendChild(block);
 	cell2.appendChild(block.cloneNode());
 	cell3.appendChild(block.cloneNode());
 
 	block = document.createElement("div");
-	block.setAttribute("class", "fill-block fill-block-red");
+	block.setAttribute("class", "fill-block fill-block-purple color-3 color-3-outset-border");
 	block.setAttribute("height", "25px");
 	cell4.appendChild(block);
+	cell1.appendChild(block.cloneNode());
+	cell2.appendChild(block.cloneNode());
+
+	block = document.createElement("div");
+	block.setAttribute("class", "fill-block fill-block-green color-1 color-1-outset-border");
+	block.setAttribute("height", "100px");
+	cell1.appendChild(block.cloneNode());
 }
 
 /**

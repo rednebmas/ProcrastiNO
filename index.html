@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Template Page</title>
+        <title>ProcrastiNO</title>
 
         <!-- Styles -->
         <link href="style.css" rel="stylesheet">
+        <link href="colors.css" rel="stylesheet">
 
         <!-- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -16,7 +17,7 @@
     <body>
         <div id="nav-bar">
             <span id="nav-bar-title">ProcrastiNO</span>
-            <span id="nav-bar-right-button-large">+</span>
+            <span id="nav-bar-right-button-large"><a href="new.html">+</a></span>
         </div>
 
         <div id="tetris-grid-container">
@@ -24,8 +25,9 @@
 
         <div class="separator"></div>
         <div id="task-list">
+
             <a href="task.html">
-                <div class="task" style="background-color: #FF0000;">
+                <div class="task color-3-dark">
                     <div class="detail-arrow-container"><div class="detail-arrow"></div> </div>
                     <div class="time-left-container">
                         <div class="time">15</div>
@@ -35,8 +37,9 @@
                     <div class="class">INFO 360</div>
                 </div>
             </a>
+
             <a href="task.html">
-                <div class="task" style="background-color: #0000FF;">
+                <div class="task color-2-dark">
                     <div class="detail-arrow-container"> <div class="detail-arrow"></div> </div>
                     <div class="time-left-container">
                         <div class="time">30</div>
@@ -46,6 +49,19 @@
                     <div class="class">INFO 380</div>
                 </div>
             </a>
+
+            <a href="task.html">
+                <div class="task color-1-dark">
+                    <div class="detail-arrow-container"> <div class="detail-arrow"></div> </div>
+                    <div class="time-left-container">
+                        <div class="time">90</div>
+                        <div class="time-units">minutes today</div>
+                    </div>
+                    <div class="title">Study for Quiz 3</div>
+                    <div class="class">INFO 450</div>
+                </div>
+            </a>
+
         </div>
     </body>
 </html>
