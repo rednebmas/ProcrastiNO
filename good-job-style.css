@@ -1,0 +1,26 @@
+.page-centerer {
+	margin: 15px auto;
+	width: 70%;
+	text-align: center;
+}
+
+.large-text {
+	font-size: 20px;
+}
+
+.extra-large-text {
+	font-size: 40px;
+}
+
+.very-large-text {
+	font-size: 62px;
+}
+
+.ok-btn {
+	border-radius: 7px;
+	width: 50%;
+	display: inline-block;
+	margin: 20px;
+	padding: 10px;
+	font-size: 35px;
+}
