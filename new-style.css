@@ -7,11 +7,13 @@
 }
 
 .task-attribute .title {
-	
+	font-size: 14px;
+	color: #F2F2F2;
 }
 
 .task-attribute .attribute-value {
-	background-color: #383838;
-	border-top: 1px solid #898989;
-	border-bottom: 1px solid #898989;
+	background-color: #B2B2B2;
+	border-top: 1px solid #A3A3A3;
+	border-bottom: 1px solid #A3A3A3;
+	font-size: 20px;
 }
