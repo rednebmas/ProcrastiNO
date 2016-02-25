@@ -30,21 +30,24 @@ body {
 	text-align: center;
 	bottom: 0px;
 	position: fixed;
-	height: 50px;
+	height: 70px;
+	font-size: 24px;
 }
 
 #done-for-today {
 	width: 25%;
 	left: 0px;
+	/*border-top: 4px solid #54008C;*/
 }
 
 #start-button {
 	width: 75%;
 	right: 0px;
+	/*border-top: 4px solid #488C00;*/
 }
 
 #done-for-today .aligner {
-	height: 50px;
+	/*height: 70px;*/
 }
 
 .aligner, .aligned {

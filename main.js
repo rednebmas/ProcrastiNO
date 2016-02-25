@@ -28,30 +28,50 @@ function darkenTasksBGColor()
 
 function addHomeworksToTetrisGrid()
 {
+	var delay = 0.0;
+
 	// cells to fill with fake blocks
 	var cell1 = document.getElementById('tetris-grid-cell-5-3');
 	var cell2 = document.getElementById('tetris-grid-cell-5-4');
 	var cell3 = document.getElementById('tetris-grid-cell-5-5');
 	var cell4 = document.getElementById('tetris-grid-cell-5-2');
 
-	var block = document.createElement("div");
-	block.setAttribute("class", "fill-block fill-block-blue color-2 color-2-outset-border");
-	block.setAttribute("height", "50px");
-	cell1.appendChild(block);
-	cell2.appendChild(block.cloneNode());
-	cell3.appendChild(block.cloneNode());
+	var block1 = document.createElement("div");
+	block1.setAttribute("class", "fill-block fill-block-blue color-2 color-2-outset-border");
+	block1.setAttribute("height", "50px");
 
-	block = document.createElement("div");
-	block.setAttribute("class", "fill-block fill-block-purple color-3 color-3-outset-border");
-	block.setAttribute("height", "25px");
-	cell4.appendChild(block);
-	cell1.appendChild(block.cloneNode());
-	cell2.appendChild(block.cloneNode());
+	block2 = document.createElement("div");
+	block2.setAttribute("class", "fill-block fill-block-purple color-3 color-3-outset-border");
+	block2.setAttribute("height", "25px");
 
-	block = document.createElement("div");
-	block.setAttribute("class", "fill-block fill-block-green color-1 color-1-outset-border");
-	block.setAttribute("height", "100px");
-	cell1.appendChild(block.cloneNode());
+	block3 = document.createElement("div");
+	block3.setAttribute("class", "fill-block fill-block-green color-1 color-1-outset-border");
+	block3.setAttribute("height", "100px");
+
+	// Tuesday
+	delay = appendChildIncrementally(cell4, block2, delay);
+
+	// Wednesday
+	delay = appendChildIncrementally(cell1, block1, delay);
+	delay = appendChildIncrementally(cell1, block2, delay);
+	delay = appendChildIncrementally(cell1, block3, delay);
+
+	// Thursday
+	delay = appendChildIncrementally(cell2, block1, delay);
+	delay = appendChildIncrementally(cell3, block1, delay);
+
+	// Friday
+	delay = appendChildIncrementally(cell2, block2, delay);
+}
+
+// Returns new delay
+function appendChildIncrementally(cell, block, delay) {
+	// console.log(cell);
+	setTimeout(function() {
+		cell.appendChild(block.cloneNode());
+		console.log("appended");
+	}, delay * 1000);
+	return delay + .1;
 }
 
 /**
