@@ -58,10 +58,10 @@ function addHomeworksToTetrisGrid()
 
 	// Thursday
 	delay = appendChildIncrementally(cell2, block1, delay);
-	delay = appendChildIncrementally(cell3, block1, delay);
+	delay = appendChildIncrementally(cell2, block2, delay);
 
 	// Friday
-	delay = appendChildIncrementally(cell2, block2, delay);
+	delay = appendChildIncrementally(cell3, block1, delay);
 }
 
 // Returns new delay
