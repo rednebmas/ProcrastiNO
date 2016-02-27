@@ -1,10 +1,32 @@
+body {
+	padding-top: 0px !important;
+}
+
 .page-centerer {
 	margin: auto;
-	width: 70%;
+	width: 90%;
 	text-align: center;
 
 	/* vertical */
 	position: relative;
-	top: 50%;
+	top: 45%;
 	transform: translateY(-50%);
+}
+
+.app-name {
+	font-size: 16vw;
+}
+
+.login-button {
+	width: 250px;
+	height: 82px;
+	line-height: 58px;
+	font-size: 35px;
+	margin: auto;
+	border-radius: 7px;
+}
+
+.login-button .subtitle {
+	font-size: 11px;
+	margin-top: -26px;
 }
