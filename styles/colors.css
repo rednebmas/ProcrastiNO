@@ -1,7 +1,13 @@
 /* https://coolors.co/app/6b00b2-5cb200-008bb2-7a7a7a-262626 */
 
 /**/
-/* Color 1 */
+/**/
+.nav-bar-bg-color {
+	background-color: #383838;
+}
+
+/**/
+/* Color 1: Green */
 /**/
 
 .color-1 {
@@ -27,7 +33,7 @@
 }
 
 /**/
-/* Color 2 */
+/* Color 2: Blue */
 /**/
 
 .color-2 {
@@ -53,7 +59,7 @@
 }
 
 /**/
-/* Color 3 */
+/* Color 3: Purple ; */
 /**/
 
 .color-3 {
