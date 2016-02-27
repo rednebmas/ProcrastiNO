@@ -2,9 +2,18 @@ body {
 	background-color: #383838;
 }
 
+#estimated-percent-complete {
+	margin-bottom: 5px;
+}
+
+.estimated-percent-complete-label {
+	margin-bottom: 5px;
+	margin-top: 30px;
+}
+
 .page-centerer {
-	margin: 15px auto;
-	width: 70%;
+	margin: auto;
+	width: 90%;
 	text-align: center;
 
 	/* vertical */
@@ -32,4 +41,17 @@ body {
 	margin: 20px;
 	padding: 10px;
 	font-size: 35px;
+	min-width: 270px;
 }
+
+.edit-btn {
+	height: 30px;
+	line-height: 30px;
+
+	border-radius: 7px;
+	width: 140px;
+	margin: auto;
+	font-size: 18px;
+	background-color: #C4C4C4;
+}
+

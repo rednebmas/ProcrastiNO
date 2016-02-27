@@ -6,6 +6,7 @@ html {
 }
 
 body {
+	padding-top: 44px;  /* for the fixed nav bar */
 	margin: 0px;
 	height: 100%;
 	color: white;
@@ -26,6 +27,11 @@ a {
 	height: 44px;
 	line-height: 44px;
 	text-align: center;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	z-index: 200;
 }
 
 #nav-bar-left-button {

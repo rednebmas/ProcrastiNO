@@ -1,0 +1,10 @@
+.page-centerer {
+	margin: auto;
+	width: 70%;
+	text-align: center;
+
+	/* vertical */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
