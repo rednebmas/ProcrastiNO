@@ -116,7 +116,9 @@ function styleTable(table)
 	lastRow.setAttribute("class", "last-row");
 	for (var i = 0; i < weekdays.length; i++) 
 	{
-		lastRow.children[i+1].innerHTML = weekdays[i];
+		var span = document.createElement("span");
+		span.innerHTML = weekdays[i];
+		lastRow.children[i+1].appendChild(span);
 	}
 
 	return table;
