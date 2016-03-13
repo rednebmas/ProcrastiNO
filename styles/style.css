@@ -57,6 +57,13 @@ a {
 	font-size: 20px;
 }
 
+#cog-img {
+	width: 24px;
+	height: 24px;
+
+	margin-top: 10px;
+}
+
 /***************
  * Tetris grid *
  **************/
